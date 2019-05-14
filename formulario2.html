@@ -5,25 +5,31 @@
 </head>
 <body>
 	<form>
-		<input placeholder="price" type="text" name="price" required="obligatorio">
-		<select id="opciones" name="opciones" required="obligatorio">
+		<input placeholder="price" type="text" name="price" required="obligatorio" pattern="[0-9]" onclick="numeros();">
+		<select id="opciones" name="opciones" required="obligatorio" onclick="lista();">
 			<option value="1">activo</option>
 			<option value="2">inactivo</option>
 		</select>
 		<button>Guardar</button>
 	</form>
 	<script type="text/javascript">
-
-		valor = document.getElementById("price").value;
-if( isNaN(valor) ) {
+		function numeros() {
+ 	
+ 	valor = document.getElementById("price").value;
+if( isNaN(valor); ) {
 	alert('solo numeros');
   return false;
+}
+ }
 		
-		indice = document.getElementById("opciones").selectedIndex;
+		function lista() {
+			
+			indice = document.getElementById("opciones").selectedIndex;
 if( indice == null || indice == 0 ) {
-	alert('opciones')
   return false;
 }
+
+		}
 
 	</script>
 </body>
