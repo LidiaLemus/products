@@ -13,18 +13,30 @@
 		<button>Guardar</button>
 	</form>
 	<script type="text/javascript">
+
 		function numeros() {
  	
- 	valor = document.getElementById("price").value;
-if( isNaN(valor); ) {
-	alert('solo numeros');
-  return false;
+ 		valor = document.getElementById("price").value;
+		if( isNaN(valor) || /\d*\.?\d* $/ ) {
+			alert('solo numeros');
+ 		 return true;
 }
+else{
+	return false;
  }
+
 		
+	}	
+
+
+
+
+
+
 		function lista() {
 			
 			indice = document.getElementById("opciones").selectedIndex;
+
 if( indice == null || indice == 0 ) {
   return false;
 }

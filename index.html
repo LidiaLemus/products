@@ -29,8 +29,11 @@ if( valor == null || valor.length == 0 || /^\s+$/.test(valor) ) {
  	valor = document.getElementById("price").value;
 if( isNaN(valor); ) {
 	alert('solo numeros');
-  return false;
+  return true;
 }
+	else {
+		return false;
+	}
  }
 
 	</script>
