@@ -7,9 +7,9 @@
 </head>
 <body>
 	<form>
-		<input placeholder="Nombre del producto" type="text" id="nombre" name="nombre" required="obligatorio" onclick="texto();">
-		<input placeholder="price" type="text" id="price" name="price" required="obligatorio">
-		<select id="is_active" onclick="numeros();">
+		<input placeholder="Nombre del producto" type="text" id="nombre" name="nombre" required="obligatorio" onclick="texto();" pattern="[a-zA-Z]{3,50}">
+		<input placeholder="price" type="text" id="price" name="price" required="obligatorio" pattern="[0-9]">
+		<select pattern="[1||0]" id="is_active" onclick="numeros();" required="obligatorio">
 			<option value="1">activo</option>
 			<option value="2">inactivo</option>
 		</select>
