@@ -7,25 +7,32 @@
 </head>
 <body>
 	<form>
-		<input placeholder="Nombre del producto" type="text" id="nombre" name="nombre" required="obligatorio">
+		<input placeholder="Nombre del producto" type="text" id="nombre" name="nombre" required="obligatorio" onclick="texto();">
 		<input placeholder="price" type="text" id="price" name="price" required="obligatorio">
-		<select id="is_active">
+		<select id="is_active" onclick="numeros();">
 			<option value="1">activo</option>
 			<option value="2">inactivo</option>
 		</select>
 		<button>Enviar</button>
 	</form>
 	<script type="text/javascript">
-		valor = document.getElementById("nombre").value;
+		function texto (){
+			valor = document.getElementById("nombre").value;
 if( valor == null || valor.length == 0 || /^\s+$/.test(valor) ) {
-	alert('campo obligatorio')
+	alert('campo obligatorio');
   return false;
 }
-valor = document.getElementById("price").value;
-if( isNaN(valor) ) {
-	alert('solo numeros')
+		}
+		
+ function numeros() {
+ 	// body...
+ 	valor = document.getElementById("price").value;
+if( isNaN(valor); ) {
+	alert('solo numeros');
   return false;
 }
+ }
+
 	</script>
 </body>
 </html>

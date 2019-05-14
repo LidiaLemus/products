@@ -6,7 +6,7 @@
 <body>
 	<form>
 		<input placeholder="price" type="text" name="price" required="obligatorio">
-		<select id="opciones" name="opciones">
+		<select id="opciones" name="opciones" required="obligatorio">
 			<option value="1">activo</option>
 			<option value="2">inactivo</option>
 		</select>
@@ -16,11 +16,12 @@
 
 		valor = document.getElementById("price").value;
 if( isNaN(valor) ) {
-	alert('solo numeros')
+	alert('solo numeros');
   return false;
 		
 		indice = document.getElementById("opciones").selectedIndex;
 if( indice == null || indice == 0 ) {
+	alert('opciones')
   return false;
 }
 
