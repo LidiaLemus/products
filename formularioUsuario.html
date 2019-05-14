@@ -23,7 +23,7 @@
 		function texto (){
 			valor = document.getElementById("nombre").value;
 if( valor == null || valor.length == 0 || /^\s+$/.test(valor) ) {
-	alert('campo obligatorio');
+
   return false;
 }
 		}
@@ -32,7 +32,7 @@ if( valor == null || valor.length == 0 || /^\s+$/.test(valor) ) {
  	// body...
  	valor = document.getElementById("price").value;
 if( isNaN(valor) || /\d*\.?\d* $/  ) {
-	alert('solo numeros');
+	
   return true;
 }
 	else {
