@@ -24,7 +24,7 @@ button{
   margin: 4px 2px;
   cursor: pointer;
 }
-select,option{
+select{
 	
   background-color: #CC007E;
   border: none;
