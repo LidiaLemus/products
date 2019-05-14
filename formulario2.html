@@ -6,11 +6,19 @@
 <body>
 	<form>
 		<input placeholder="price" type="text" name="price">
-		<select id="is_active">
+		<select id="opciones" name="opciones">
 			<option value="1">activo</option>
 			<option value="2">inactivo</option>
 		</select>
 		<button>Guardar</button>
 	</form>
+	<script type="text/javascript">
+		
+		indice = document.getElementById("opciones").selectedIndex;
+if( indice == null || indice == 0 ) {
+  return false;
+}
+
+	</script>
 </body>
 </html>
