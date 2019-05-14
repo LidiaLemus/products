@@ -7,8 +7,8 @@
 </head>
 <body>
 	<form>
-		<input placeholder="Nombre del producto" type="text" id="nombre" name="nombre">
-		<input placeholder="price" type="text" id="price" name="price">
+		<input placeholder="Nombre del producto" type="text" id="nombre" name="nombre" required="obligatorio">
+		<input placeholder="price" type="text" id="price" name="price" required="obligatorio">
 		<select id="is_active">
 			<option value="1">activo</option>
 			<option value="2">inactivo</option>
@@ -18,10 +18,12 @@
 	<script type="text/javascript">
 		valor = document.getElementById("nombre").value;
 if( valor == null || valor.length == 0 || /^\s+$/.test(valor) ) {
+	alert('campo obligatorio')
   return false;
 }
 valor = document.getElementById("price").value;
 if( isNaN(valor) ) {
+	alert('solo numeros')
   return false;
 }
 	</script>
