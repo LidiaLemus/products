@@ -5,16 +5,20 @@
 	Formulario del usuario
 	</title>
 </head>
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
 <body>
+	<div>
+	<h1>Formulario del usuario</h1>
 	<form>
-		<input placeholder="Nombre del producto" type="text" id="nombre" name="nombre" required="obligatorio" onclick="texto();" pattern="[a-zA-Z]{3,50}">
-		<input placeholder="price" type="text" id="price" name="price" required="obligatorio" pattern="[0-9]">
+		<input placeholder="Nombre del producto" type="text" id="nombre" name="nombre" required="obligatorio" onclick="texto();" pattern="[a-zA-Z]{3,50}"><br><br>
+		<input placeholder="price" type="text" id="price" name="price" required="obligatorio" pattern="[0-9]"><br><br>
 		<select pattern="[1||0]" id="is_active" onclick="numeros();" required="obligatorio">
 			<option value="1">activo</option>
 			<option value="2">inactivo</option>
 		</select>
 		<button>Enviar</button>
 	</form>
+</div>
 	<script type="text/javascript">
 		function texto (){
 			valor = document.getElementById("nombre").value;

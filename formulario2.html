@@ -3,15 +3,19 @@
 <head>
 	<title>Formulario de actualizacion</title>
 </head>
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
 <body>
+	<div>
+		<h1>Actualizacion</h1>
 	<form>
-		<input placeholder="price" type="text" name="price" required="obligatorio" pattern="[0-9]" onclick="numeros();">
+		<input placeholder="price" type="text" name="price" required="obligatorio" pattern="[0-9]" onclick="numeros();"><br><br>
 		<select id="opciones" name="opciones" required="obligatorio" onclick="lista();">
 			<option value="1">activo</option>
 			<option value="2">inactivo</option>
 		</select>
 		<button>Guardar</button>
 	</form>
+</div>
 	<script type="text/javascript">
 
 		function numeros() {

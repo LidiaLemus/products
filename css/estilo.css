@@ -1,0 +1,36 @@
+div{
+	background: #800057;
+	font-family: cursive;
+	padding: 15%;
+	width: 30%;
+	justify-content: center;
+	color: white;
+
+}
+input[type=text] {
+	background-color: #CC007E;	
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  color: white;
+}
+button{
+  background-color: #CC007E;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+select,option{
+	
+  background-color: #CC007E;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
