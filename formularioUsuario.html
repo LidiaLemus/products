@@ -12,10 +12,13 @@
 	<form>
 		<input placeholder="Nombre del producto" type="text" id="nombre" name="nombre" required="obligatorio" onclick="texto();" pattern="[a-zA-Z]{3,50}"><br><br>
 		<input placeholder="price" type="text" id="price" name="price" required="obligatorio" pattern="[0-9]"><br><br>
-		<select class="select-css" id="is_active" onclick="numeros();" required="obligatorio">
+		
+		<select onclick="numeros();" required>
 			<option value="1">activo</option>
 			<option value="2">inactivo</option>
 		</select><br><br>
+	
+
 		<button>Enviar</button>
 	</form>
 </div>
