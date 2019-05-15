@@ -3,7 +3,6 @@ div{
 	font-family: cursive;
 	padding: 15%;
 	width: 30%;
-	justify-content: center;
 	color: white;
 
 }
@@ -12,8 +11,7 @@ input[type=text] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
-  box-sizing: border-box;
-  color: white;
+  
 }
 button{
   background-color: #CC007E;
@@ -25,6 +23,7 @@ button{
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 
 select, option {
 	
@@ -36,3 +35,5 @@ select, option {
   margin: 4px 2px;
   cursor: pointer;
 }
+=======
+>>>>>>> ccdb5612b8d446cf7e01620ff5a99a7cdc87e6a0
