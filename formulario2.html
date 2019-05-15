@@ -10,15 +10,21 @@
 <body>
 	<div>
 		<h1>Actualizacion</h1>
+
 	<form action="insert.php" method="post">
 		<input placeholder="price" type="text" required pattern="[0-9]" onclick="numeros();"><br><br>
+
 		<select required>
 			<option value="1">activo</option>
 			<option value="2">inactivo</option>
 		</select>
+
 		<button>Guardar</button>
+
 	</form>
-</div>
+
+    </div>
+
 	<script type="text/javascript">
 
 		function numeros() {
@@ -27,17 +33,13 @@
 		if( isNaN(valor) || /\d*\.?\d* $/ ) {
 			
  		 return true;
-}
+           }
 else{
 	return false;
  }
 
 		
 	}	
-
-
-
-
 
 
 		function lista() {
