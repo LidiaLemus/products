@@ -8,10 +8,11 @@
 $servername = "localhost";
 $username = "root";
 $password = "12345";
-$dbname = "auth";
+$dbname = "products";
 
-$user = $_POST["user"];
-$pass = $_POST["pass"];
+$product_name = $_POST["product_name"];
+$price = $_POST["price"];
+$is_activate = $_POST["is_activate"];
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
