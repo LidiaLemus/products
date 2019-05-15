@@ -1,54 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>
-	Formulario del usuario
-	</title>
+    <title>
+        Formulario del usuario
+    </title>
 </head>
 <link rel="stylesheet" type="text/css" href="css/estilo.css">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <body>
-	<div>
-	<h1>Formulario del usuario</h1>
-	<form action="insert.php" method="post">
-		<input placeholder="Nombre del producto" type="text" id="nombre" required onclick="texto();" pattern="[a-zA-Z]{3,50}" name="product_name"><br><br>
+    <div>
+        <h1>Formulario del usuario</h1>
+        <form action="insert.php" method="post">
+            <input placeholder="Nombre del producto" type="text" id="nombre" required onclick="texto();" pattern="[a-zA-Z]{3,50}" name="product_name"><br><br>
+            <input placeholder="price" type="text" required pattern="[0-9]*" name="price"><br><br>
+            <select required name="is_activate">
+                <option value="1">activo</option>
+                <option value="2">inactivo</option>
+            </select><br><br>
+            <button>Enviar</button>
+        </form>
+    </div>
+    <script type="text/javascript">
+    function texto() {
+        valor = document.getElementById("nombre").value;
+        if (valor == null || valor.length == 0 || /^\s+$/.test(valor)) {
 
-		<input placeholder="price" type="text" required pattern="[0-9]*" name="price"><br><br>
+            return false;
+        }
+    }
 
-		<select required name="is_activate">
-			<option value="1">activo</option>
-			<option value="2">inactivo</option>
-		</select><br><br>
-		
-		<button>Enviar</button>
-	</form>
-</div>
-	<script type="text/javascript">
-		function texto(){
-			valor = document.getElementById("nombre").value;
-		if( valor == null || valor.length == 0 || /^\s+$/.test(valor) ) {
-	
- 			 return false;
-		}	
-		}
-		
- 		function numeros() {
- 	
+    function numeros() {
 
- 		valor = document.getElementById("price").value;
-		if( isNaN(valor) || /\d*\.?\d* $/  ) {
 
-  		return true;
-		}
-		else 
-		{
-		return false;
-		}
+        valor = document.getElementById("price").value;
+        if (isNaN(valor) || /\d*\.?\d* $/) {
 
-		 }
+            return true;
+        } else {
+            return false;
+        }
 
-	</script>
+    }
+    </script>
 </body>
+
 </html>
