@@ -12,10 +12,10 @@
 <body>
 	<div>
 	<h1>Formulario del usuario</h1>
-	<form>
+	<form action="insert.php" method="post">
 		<input placeholder="Nombre del producto" type="text" id="nombre" required onclick="texto();" pattern="[a-zA-Z]{3,50}" name="product_name"><br><br>
 
-		<input placeholder="price" type="text" required pattern="[0-9]" name="price"><br><br>
+		<input placeholder="price" type="text" required pattern="[0-9]*" name="price"><br><br>
 
 		<select required name="is_activate">
 			<option value="1">activo</option>
