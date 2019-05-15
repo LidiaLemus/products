@@ -23,7 +23,6 @@ button{
   cursor: pointer;
 }
 
-<<<<<<< HEAD
 
 select, option {
 	
@@ -35,5 +34,7 @@ select, option {
   margin: 4px 2px;
   cursor: pointer;
 }
-=======
->>>>>>> ccdb5612b8d446cf7e01620ff5a99a7cdc87e6a0
+table{
+  border-collapse: 2px solid black;
+
+}

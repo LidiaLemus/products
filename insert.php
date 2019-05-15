@@ -20,6 +20,7 @@ try {
     $sql = "INSERT INTO product VALUES (null, '$product_name', '$price','$is_activate')";
     $conn->exec($sql);
     echo "New record created successfully";
+    header('location: index.html')
     }
 catch(PDOException $e)
     {

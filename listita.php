@@ -2,6 +2,7 @@
 <html>
 <head>
     <title></title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
 <body>
 <?php
@@ -19,9 +20,41 @@ try {
     if($conn){
         $result = $conn->query($sql);
         foreach ($result as $value) {
-            echo "<br>" . $value["product_name"];
+            echo "<table border=2px>";
+
+            echo"<tr>";
+            echo"<td>";
+                echo"Nombre del Producto";
+            echo"</td>";
+            echo"<td>";
+                echo"Precio";
+            echo"</td>";
+            echo"<td>";
+                echo"Estado";
+            echo"</td>";
+            echo"</tr>";
+
+            echo"<tr>";
+               echo"<td>";
+                    echo "<br>" . $value["product_name"];
+               echo"</td>";
+            echo"<td>";
             echo "<br>"  . $value["price"];
-            echo  "<br>" . $value["is_activate"]
+
+            echo"</td>";
+
+            echo"<td>";
+            echo  "<br>" . $value["is_activate"];
+
+            echo"</td>";
+            
+            echo"</tr>";
+            echo "<br>";
+
+
+            
+
+            echo "</table>";
         }
 
     }else{
