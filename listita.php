@@ -51,10 +51,10 @@ try {
 
                 echo "<td>"; 
 
-                echo "<button> Modificar"; echo "</button>";
-                echo "<button> Eliminar"; echo "</button>";
-                echo "<button> agregar"; echo "</button>";
+                echo "<input type='button' value='modificar'>";
 
+                echo "<input type='button' value='Eliminar'>";
+                echo "<input type='button' value='Agregar'>";
                 echo "</td>";
 
 
