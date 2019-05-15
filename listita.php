@@ -48,6 +48,17 @@ try {
 
             echo"</td>";
             
+
+                echo "<td>"; 
+
+                echo "<button> Modificar"; echo "</button>";
+                echo "<button> Eliminar"; echo "</button>";
+                echo "<button> agregar"; echo "</button>";
+
+                echo "</td>";
+
+
+
             echo"</tr>";
             echo "<br>";
 
