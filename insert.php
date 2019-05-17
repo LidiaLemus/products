@@ -19,12 +19,14 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $sql = "INSERT INTO product VALUES (null, '$product_name', '$price','$is_activate')";
     $conn->exec($sql);
-    echo "New record created successfully";
-    header('location: index.html')
+
+    
     }
 catch(PDOException $e)
     {
     echo $sql . "<br>" . $e->getMessage();
+    header("location.formularioUsuario.html");
+    
     }
 $conn = null;
 ?> 
